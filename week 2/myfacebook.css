@@ -1,0 +1,164 @@
+body{
+
+    background-color: #f8f8f8;
+    
+}
+
+
+.facebook{
+
+    color: #1b64d8;
+    margin-top: 190px;
+    margin-left: 380px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110px;
+    font-weight: bolder ;
+
+
+}
+
+
+.description{
+    margin-top: -30px;
+    margin-left: 380px;
+    max-width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight : normal;
+}
+
+
+.registration{
+    background-color: white;
+    height: 400px;
+    display: flexbox;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%), 0 8px 16px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    margin-left: 1000px;
+    margin-top: -320px;
+    width: 430px;
+    text-align: center;
+    
+}
+
+.new-page{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px 0px 860px;
+    width: 700px;
+    text-align: center;
+}
+
+.login{
+    display: flexbox;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 17px 20px 0px 20px;
+    padding: 6px 20px;
+    width: 333px;
+    height: 44px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+
+.press{
+    background-color: #2067d8;
+    width: 350px;
+    height: 44px;
+    padding: 7px 12px;
+    text-align: center;
+    margin: 23px 23px;
+    color: white;
+    border-radius: 6px;
+    
+}
+
+
+.forget_password{
+    text-align: center;
+    color: rgb(12, 12, 117);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    margin-top: -11px;
+}
+
+
+.line{
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 218, 218);
+    display: flex;
+    margin: 0 0 27px 16px;
+    text-align: center;
+}
+
+
+
+.new_account{
+    background-color: #23f569;
+    width: 350px;
+    height: 50px;
+    padding: 10px 12px;
+    text-align: center;
+    margin-top: 17px;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 0px;
+}
+
+
+.footer{
+    width: 1400px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0px;
+    margin-top: 120px;
+    text-align: left;
+
+    
+    padding: 0px 511px 10px 0px;
+}
+
+
+.footer_language{
+    width: 950px;
+    margin-left: 255px;
+    border-bottom: 1px solid #bbb8b898;
+    height: 40px;
+    line-height: 45px;
+    font-size: 12px;
+    color:#848484;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.footer_language a{
+    color:#848484;
+    display: inline;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+.footer_information{
+    width: 1000px;
+    margin: 0px 120px 0 252px;
+    font-size: 12px;
+    color:#848484;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.footer_information a{
+    color:#848484;
+    display: inline-block;
+    margin-right:10px ;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
