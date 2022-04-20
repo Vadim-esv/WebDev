@@ -5,20 +5,20 @@ import operator
 
 
 def company_list(request):
-    companies = Company.objects.all()
+    companies = Company.objects.all().get(active=True)
     companies_json = [company.to_json() for company in companies]
     return JsonResponse(companies_json, safe=False)
 
 
-def vacancy_list(request):
-    vacancies = Vacancy.objects.all()
+def vacancy_list(request, vacancy_active):
+    vacancies = Vacancy.objects.all().get(active=True)
     vacancy_json = [vacancy.to_json() for vacancy in vacancies]
     return JsonResponse(vacancy_json, safe=False)
 
 
 def company_details(request, company_id):
     try:
-        company = Company.objects.get(id=company_id)
+        company = Company.objects.get(id=company_id, active=True)
     except Company.DoesNotExist as e:
         return JsonResponse({'message'}, str(e), status=400)
     return JsonResponse(company.to_json())
@@ -26,7 +26,7 @@ def company_details(request, company_id):
 
 def vacancy_details(request, vacancy_id):
     try:
-        vacancy = Vacancy.objects.get(id=vacancy_id)
+        vacancy = Vacancy.objects.get(id=vacancy_id,active=True)
     except Vacancy.DoesNotExist as e:
         return JsonResponse({'message'}, str(e), status=400)
     return JsonResponse(vacancy.to_json())
@@ -45,5 +45,6 @@ def sorted_vacancies(request, companies_id):
     except Company.DoesNotExist as e:
         return JsonResponse({'message'}, str(e), status=400)
     return JsonResponse(vacancies_tojson, safe=False)
+
 
 

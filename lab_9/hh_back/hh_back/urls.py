@@ -24,6 +24,6 @@ urlpatterns = [
     path('api/companies/<int:companies_id>/vacancies/', sorted_vacancies),
     path('api/vacancies/', vacancy_list),
     path('api/vacancies/<int:vacancy_id>/', vacancy_details),
-    path('api/vacancies/top_ten/', top_vacancies)
+    path('api/vacancies/top_ten/', top_vacancies),
 
 ]
